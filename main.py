@@ -5,9 +5,6 @@ from utils import wait_dev
 
 
 class U2:
-    """
-    重写u2
-    """
     @staticmethod
     def connect(dev):
         if not wait_dev(dev,timeout_=1):
@@ -21,7 +18,6 @@ class U2:
             subprocess.run(f"adb -s {dev} shell /data/local/tmp/atx-agent server --stop")  # 停止服务
             subprocess.run(f"adb -s {dev} shell /data/local/tmp/atx-agent server -d")  # 启动服务
             sleep(3)
-            # d.service("uiautomator").stop()  # 停止U2
         finally:
             if not d:
                 raise ValueError(f"{dev} 初始化U2失败")

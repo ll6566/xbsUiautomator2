@@ -1,11 +1,10 @@
 from setuptools import setup, find_packages
 
 setup(
-    name='xbs_u2',
+    name='xbsUiautomator2',
     version='0.1.0',
     packages=find_packages(),
     install_requires=[
-        # 在这里列出你的依赖项，例如：
         'uiautomator2==2.16.25',
     ],
     author='65',
@@ -13,6 +12,6 @@ setup(
     description='rewrite uiautomator2',
     long_description=open('README.md').read(),
     long_description_content_type='text/markdown',
-    url='https://github.com/ll6566/xbs_uiautomatro',  # 你的项目主页
+    url='https://github.com/ll6566/xbsUiautomator2',
     python_requires='>=3.0.0',
 )
